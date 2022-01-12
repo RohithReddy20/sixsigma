@@ -1,0 +1,107 @@
+.channels-contents-header{
+  height: 64px !important;
+  padding: 0rem 2rem;
+  border-bottom: 1px solid #D9D4D4;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1px;
+}
+.channels-contents-header .column{
+  padding: 0 1rem !important;
+}
+
+.channels-contents-name{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: left !important;
+}
+
+.channels-contents-header-menu{
+  height: 100% !important;
+  border-bottom: none !important;
+}
+.channels-contents-header-menu a{
+  height: 100%;
+  letter-spacing: 1px !important;
+  font-size: 0.9rem !important;
+  padding: 1rem 1.6rem !important;
+  margin: 0 1rem !important;
+}
+.channels-contents-header-menu a.active{
+  font-weight: 300 !important;
+  border-bottom: solid 3px rgba(180, 141, 94, 1) !important;
+}
+
+.channels-content-info{
+  display: flex !important;
+  justify-content: right !important;
+  align-items: center !important;
+}
+.channels-content-info-users{
+  padding: 4px 12px;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.channels-content-info-avatars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.channels-content-info-img{
+  position: absolute;
+}
+.channels-content-info i{
+  margin-left: 12px;
+}
+.channels-content-info button{
+  background: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+#channels-content-header-options-btn{
+  position: relative;
+  cursor: pointer !important;
+}
+
+#channels-content-header-options-btn .channels-content-header-options-container{
+  width: max-content;
+  background: #FFFFFF;
+  padding: 10px 0;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 160%;
+  right: 0;
+  z-index: 2;
+}
+#channels-content-header-options-btn .channels-content-header-options-container .channels-content-header-options-item{
+  width: 100%;
+  padding: 12px 22px;
+  text-align: left !important;
+  font-size: 15px;
+  user-select: none;
+}
+#channels-content-header-options-btn .channels-content-header-options-container .channels-content-header-options-item:hover{
+  background: rgba(241, 238, 238, 1);
+}
+
+.channels-contents-footer{
+  height: 64px !important;
+  padding: 12px 40px;
+  border-top: 1px solid #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.channels-contents-footer i{
+  cursor: pointer !important;
+}

@@ -1,0 +1,10 @@
+.swal2-container.swal2-center>.swal2-popup {
+    background: #b48d5e;
+    color: #fff;
+    width: 300px;
+    font-size: 10px;
+    height: auto;
+}
+.swal2-styled.swal2-confirm {
+    display: none !important;
+}

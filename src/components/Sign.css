@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: absolute;
+}
+
+.sign-in {
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1)),
+    url("../assets/images/01-back\ 1.png"); */
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  background-image: url("../assets/images/01-back\ 1.png");
+  width: 100vw;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-website {
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  right: 5%;
+  transition: top 0.3s;
+}
+
+.sign-in .txt {
+  color: rgb(15, 15, 15);
+  /* font-size: 12px; */
+}
+
+.sign-in .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  position: relative;
+  bottom: 20px;
+}
+
+.form-group input {
+  width: 300px;
+  height: 49px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  padding-left: 20px;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+.form-group input::placeholder {
+  color: #000;
+  /* font-weight: bolder; */
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+form button,
+.create button {
+  width: 300px;
+  height: 49px;
+  margin-top: 10px;
+  color: #b48d5e;
+  background: #000;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+
+/* for-invite-page */
+
+.invitation-container {
+  float: left;
+  position: relative;
+  left: 200px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.invitation-container button, .email-group {
+  width: 330px;
+  height: 49px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.email-group {
+  border: 1px solid #E2E3EB;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.add-email {
+  border: none;
+  position: relative;
+  left: 10px;
+  color:rgb(25, 25, 25);
+}
+
+.add-email::placeholder {
+  color: rgb(25, 25, 25);
+}
+
+.send-invitation {
+  color: #b48d5e;
+  background: #000;
+}
+
+.share-invitation {
+  background: #B08652;
+  color: #fff;
+}
+
+
+
+/* end of invite page */
+
+.passwordReset {
+  margin-top: 10px;
+}
+
+.passwordReset a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.spt h2 {
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: normal;
+}
+.spt h2:before,
+.spt h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #D8D8D8;
+  margin: auto;
+  width: 125px;
+}
+.spt h2:before {
+  margin-right: 10px;
+}
+.spt h2:after {
+  margin-left: 10px;
+}
+
+.GoAp {
+  display: flex;
+  flex-direction: column;
+}
+
+.GoAp button {
+  width: 300px;
+  height: 49px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+}
+.GoAp button:hover {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.GoAp button span img {
+  float: left;
+  position: relative;
+  right: 40px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+footer p {
+  color: rgb(133 130 130);
+  line-height: 5px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  .sign-in .txt {
+    font-size: 10px;
+  }
+  .GoAp button,
+  .form-group input,
+  button {
+    width: 280px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .GoAp button,
+  .form-group input,
+  button {
+    width: 260px !important;
+  }
+}
+
+/* for reset password */
+.reset-password {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

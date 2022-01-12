@@ -1,0 +1,76 @@
+.input-with-mentions{
+  height: 100%;
+  margin: 0 6px;
+  flex-grow: 1;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+div.DraftEditor-root{
+  overflow-y: auto;
+}
+div.DraftEditor-root div.public-DraftEditor-content{
+  padding: 2px 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+div.DraftEditor-root div.public-DraftEditorPlaceholder-root{
+  height: 100%;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.editor {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: text;
+  padding: 16px;
+  border-radius: 2px;
+  margin-bottom: 2em;
+  box-shadow: inset 0px 1px 8px -3px #ABABAB;
+  /* background: #fefefe; */
+  background: red;
+}
+
+.editor :global(.public-DraftEditor-content) {
+  /* min-height: 140px; */
+}
+
+.popover-container{
+  width: 90%;
+  max-height: 60vh;
+  padding: 8px 6px;
+  margin: 4px;
+  background: #f8f9f9;
+  border: solid 1px #e5e5e6;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
+  position: absolute;
+  bottom: 110%;
+}
+/* .popover-container .popover-entry{
+  padding: 6px 12px;
+  background: #f8f9f9;
+  border-radius: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.popover-container .popover-entry .popover-entry-avatar{
+  margin-right: 12px;
+}
+.popover-container .popover-entry .popover-entry-name{
+
+}
+.popover-container .popover-entry:hover{
+  background: #dcddde;
+  cursor: pointer;
+}
+.popover-container .popover-entry:active{
+  background: #dcddde;
+} */
