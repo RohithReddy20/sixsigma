@@ -1,12 +1,19 @@
 .workspace {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+    left: 300px;
 }
 
 .create p{
+    font-weight: normal;
+}
+
+.create div input{
+    border: 1px solid rgb(201, 196, 196);
+    font-size: 14px;
     font-weight: normal;
 }

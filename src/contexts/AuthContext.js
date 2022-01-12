@@ -51,14 +51,14 @@ export function AuthContextProvider({ children }) {
     try {
       const userCred = await firebase.auth().createUserWithEmailAndPassword(email, password);
       await userCred.user.sendEmailVerification({
-         url: `http://localhost:3000`,
+         url: `https://six-sigma.netlify.app`,
       });
       return {user: userCred.user};
     }catch(e) {
       //if mail already in use proceed to login
       if(e.message.includes("email-already-in-use")){
-        Swal.fire("Email already in use");
-        window.location.href = "http://localhost:3000/signin";
+        Swal.fire("Email already in use. Sign in instead");
+        window.location.href = "https://six-sigma.netlify.app/signin";
       }
 
        console.log(e);
@@ -72,7 +72,7 @@ export function AuthContextProvider({ children }) {
         //  console.log(error);
          if(error.message.includes("user-not-found")){
            Swal.fire("Please register to continue");
-           window.location.href = "http://localhost:3000/signup";
+           window.location.href = "https://six-sigma.netlify.app/signup";
          }
        });
   }
@@ -83,7 +83,7 @@ export function AuthContextProvider({ children }) {
 
   async function forgotPassword(email) {
     try {
-      await firebase.auth().sendPasswordResetEmail(email,{url: `http://localhost:3000/`});
+      await firebase.auth().sendPasswordResetEmail(email,{url: `https://six-sigma.netlify.app/signin`});
       Swal.fire("Password reset email sent");
     }catch(error) {
       console.log(error);

@@ -28,7 +28,7 @@ const Sidebar = () => {
             <MenuItem icon={<FaBuromobelexperte />}>Dashboard</MenuItem>
           </Menu>
         </Link>
-        <Link to="/" className='sidebar-links'>
+        <Link to="/announcements" className='sidebar-links'>
           <Menu iconShape="square">
             <MenuItem icon={<FaBullhorn />}>Announcements</MenuItem>
           </Menu>

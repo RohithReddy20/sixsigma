@@ -64,8 +64,7 @@ function Announcements() {
                 {announcement.title} <span>5</span>
               </p>
               <p className="date">
-                {announcement["created at"] && announcement["created at"].toDate().toLocaleDateString()}
-                {announcement.createdat && announcement.createdat.toDate().toLocaleTimeString()}
+                {announcement.createdAt && announcement.createdAt.toDate().getFullYear()+"/"+(announcement.createdAt.toDate().getMonth()+1)+"/"+announcement.createdAt.toDate().getDate()}
                 <img src="./images/NextIcon.svg" alt="Next" />
               </p>
             </li>

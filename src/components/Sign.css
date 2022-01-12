@@ -21,7 +21,7 @@ body {
 .top {
   background-image: url("../assets/images/01-back\ 1.png");
   width: 100vw;
-  height: 200px;
+  height: 220px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ form button,
   flex-direction: row;
   color: rgb(0, 0, 0);
   font-size: 16px;
-  margin-top: 25px;
+  margin-top: 5px;
   font-weight: normal;
 }
 .spt h2:before,

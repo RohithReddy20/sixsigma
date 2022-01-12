@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+
+import Navbar from "../Navbar/Navbar";
+import Sidebar from "../Sidebar/Sidebar";
+import { Grid } from 'semantic-ui-react';
+
 import { collection, doc, getFirestore, setDoc, serverTimestamp } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import firebase from '../../utils/init-firebase';
@@ -66,33 +71,47 @@ function WorkSpaceCreation(props) {
   }
 
   return (
-    <div className="workspace">
-      <div className="logo">
-        <img src="./images/company-logo-2.svg" alt="logo" />
-      </div>
-      <div className="create">
-        <h2>Welcome to Crown</h2>
-        <div className="form-group">
-          <input
-            type="text"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="workspaceName"
-            placeholder="Enter the name of the workspace"
-            onChange={(event) => {
-              setWorkspace(event.target.value);
-            }}
-          />
+
+    <>
+    <Grid className=""
+      divided="vertically"
+      style={{ margin: '0' }}>
+      
+        
+        <Navbar />
+      
+      <Grid.Row columns="equal" stretched
+        style={{ padding: '0', height: '88%' }}>
+        <Grid.Column tablet={3} computer={2}
+          style={{ padding: '0', margin: '0' }}>
+          <Sidebar />
+        </Grid.Column>
+        </Grid.Row>
+        </Grid>
+      <div className="workspace">
+        
+        <div className="create">
+          <h2>Welcome to Crown</h2>
+          <div className="form-group">
+            <input
+              type="text"
+              placeholder="Enter the name of the workspace"
+              onChange={(event) => {
+                setWorkspace(event.target.value);
+              }}
+            />
+          </div>
+          <button
+            style={{color: "#fff",background:"#b48d5e"}}
+            onClick={addWorkspace}
+            type="submit"
+            className="btn btn-primary"
+          >
+            Create a new workspace
+          </button>
         </div>
-        <button
-          onClick={addWorkspace}
-          type="submit"
-          className="btn btn-primary"
-        >
-          Create a new workspace
-        </button>
       </div>
-    </div>
+    </>
   );
 }
 
